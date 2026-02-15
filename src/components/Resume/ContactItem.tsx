@@ -1,16 +1,16 @@
-import { useState, useCallback } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 import {
+  CheckIcon,
+  EmailIcon,
+  ExternalLinkIcon,
   GitHubIcon,
   LinkedInIcon,
-  EmailIcon,
-  PhoneIcon,
   LocationIcon,
+  PhoneIcon,
   WebsiteIcon,
-  CheckIcon,
-  ExternalLinkIcon,
 } from '@/components/icons'
 import type { ContactType } from '@/data/types'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useCallback, useState } from 'react'
 
 const ICON_COMPONENTS: Record<ContactType, React.FC<React.SVGProps<SVGSVGElement>>> = {
   github: GitHubIcon,
@@ -66,7 +66,7 @@ export function ContactItem({ type, label, href }: ContactItemProps) {
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0, opacity: 0 }}
-                transition={{ duration: 0.15, ease: 'easeOut' }}
+                transition={{ duration: 0.10, ease: 'easeOut' }}
                 className="absolute inset-0 text-green-500"
               >
                 <CheckIcon className="w-4 h-4" />
@@ -77,7 +77,7 @@ export function ContactItem({ type, label, href }: ContactItemProps) {
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0, opacity: 0 }}
-                transition={{ duration: 0.15, ease: 'easeOut' }}
+                transition={{ duration: 0.10, ease: 'easeOut' }}
                 className="absolute inset-0"
               >
                 <IconComponent className="w-4 h-4" />
