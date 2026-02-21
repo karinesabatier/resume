@@ -9,8 +9,8 @@ export const resumeConfig: ResumeConfig = {
       en: 'Product Management & Product Design',
     },
     subtitle: {
-      fr: '20+ années d\'expérience',
-      en: '20+ years of experience',
+      fr: '30 années d\'expérience',
+      en: '30 years of experience',
     },
     location: 'Bretagne, France',
   },
@@ -29,13 +29,6 @@ export const resumeConfig: ResumeConfig = {
   contact: [
     { type: 'linkedin', label: 'Karine Sabatier', href: 'https://www.linkedin.com/in/karinesabatier/' },
     { type: 'email', label: 'karine.sabatier@zenika.com' },
-    { type: 'link', label: 'Coursera Certification', href: 'https://www.coursera.org/account/accomplishments/specialization/certificate/3C6TLEMPW3BN' },
-    { type: 'link', label: 'Credly Badge', href: 'https://www.credly.com/badges/5322a293-82d3-4742-bd00-480795f9ab98?source=linked_in_profile' },
-    { type: 'link', label: 'YouTube Talk', href: 'https://www.youtube.com/watch?v=z_Pvp5mjEx0&t=72s' },
-    { type: 'link', label: 'Explore', href: 'https://explore.le-shift.co' },
-    { type: 'link', label: 'LesImpatientes', href: 'https://lesimpatientes.com' },
-    { type: 'link', label: 'Backlight Magazine', href: 'http://blog.backlightmag.com' },
-    { type: 'link', label: 'Product Managers de l\'Ouest', href: 'https://product-mngt.slack.com' },
     { type: 'location', label: 'Bretagne, France' },
   ],
 
@@ -214,6 +207,13 @@ export const resumeConfig: ResumeConfig = {
     { title: { fr: 'Photographie', en: 'Photography' } },
     { title: { fr: 'Mentorat & Communautés Produit', en: 'Mentoring & Product Communities' } },
     { title: { fr: 'Speaker Agile & Innovation', en: 'Agile & Innovation Speaker' } },
+    { type: 'link', label: 'Coursera Certification', href: 'https://www.coursera.org/account/accomplishments/specialization/certificate/3C6TLEMPW3BN' },
+    { type: 'link', label: 'Credly Badge', href: 'https://www.credly.com/badges/5322a293-82d3-4742-bd00-480795f9ab98?source=linked_in_profile' },
+    { type: 'link', label: 'YouTube Talk', href: 'https://www.youtube.com/watch?v=z_Pvp5mjEx0&t=72s' },
+    { type: 'link', label: 'Explore', href: 'https://explore.le-shift.co' },
+    { type: 'link', label: 'LesImpatientes', href: 'https://lesimpatientes.com' },
+    { type: 'link', label: 'Backlight Magazine', href: 'http://blog.backlightmag.com' },
+    { type: 'link', label: 'Product Managers de l\'Ouest', href: 'https://product-mngt.slack.com' },
   ],
 
   theme: { preset: 'warm' },
