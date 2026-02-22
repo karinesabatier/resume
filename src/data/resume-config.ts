@@ -29,13 +29,6 @@ export const resumeConfig: ResumeConfig = {
   contact: [
     { type: 'linkedin', label: 'Karine Sabatier', href: 'https://www.linkedin.com/in/karinesabatier/' },
     { type: 'email', label: 'karine.sabatier@zenika.com' },
-    { type: 'link', label: 'Certification Google UX Design', href: 'https://www.coursera.org/account/accomplishments/specialization/certificate/3C6TLEMPW3BN' },
-    { type: 'link', label: 'Credly Badge', href: 'https://www.credly.com/badges/5322a293-82d3-4742-bd00-480795f9ab98?source=linked_in_profile' },
-    { type: 'link', label: 'Talk Agile Tour', href: 'https://www.youtube.com/watch?v=z_Pvp5mjEx0&t=72s' },
-    { type: 'link', label: 'Explore', href: 'https://explore.le-shift.co' },
-    { type: 'link', label: 'LesImpatientes', href: 'https://lesimpatientes.com' },
-    { type: 'link', label: 'Backlight Magazine', href: 'http://blog.backlightmag.com' },
-    { type: 'link', label: 'Product Managers de l\'Ouest', href: 'https://product-mngt.slack.com' },
     { type: 'location', label: 'Bretagne, France' },
   ],
 
