@@ -126,8 +126,6 @@ export const resumeConfig: ResumeConfig = {
         },
         tasks: {
           en: [
-            'Conception et implémentation de l\'architecture frontend (monorepo, bibliothèque de composants partagés)',
-            'Création d\'un système de notifications temps réel via WebSockets et Redis pub/sub',
             'Refonte UX : modernisation UX des produits et gestion du legacy',
             'Création d\’une équipe UX et le repositionnement du rôle de l’UX au sein du groupe',
             'Création d\’une architecture UX qui supporte le multi-équipe, multi-technologie, multi-plateforme',
@@ -140,8 +138,6 @@ export const resumeConfig: ResumeConfig = {
             'Conduite du changement organisationnel : création d\'une gouvernance UX forte pour harmoniser l\'ensemble du portefeuille d\'applications avec un seul Design System multiplateforme et multi technologie.',
           ],
           fr: [
-            'Conception et implémentation de l\'architecture frontend (monorepo, bibliothèque de composants partagés)',
-            'Création d\'un système de notifications temps réel via WebSockets et Redis pub/sub',
             'Refonte UX : modernisation UX des produits et gestion du legacy',
             'Création d\’une équipe UX et le repositionnement du rôle de l’UX au sein du groupe',
             'Création d\’une architecture UX qui supporte le multi-équipe, multi-technologie, multi-plateforme',
@@ -153,7 +149,8 @@ export const resumeConfig: ResumeConfig = {
             'Accompagnement des C-level dans la définition des offres et de la monétisation',
             'Conduite du changement organisationnel : création d\'une gouvernance UX forte pour harmoniser l\'ensemble du portefeuille d\'applications avec un seul Design System multiplateforme et multi technologie.',
           ],
-        },      
+        },
+      },      
     },
     {
       id: 'treckea',
