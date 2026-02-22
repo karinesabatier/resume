@@ -38,7 +38,7 @@ export const resumeConfig: ResumeConfig = {
       type: 'languages',
       items: [
         { name: { fr: 'Français', en: 'French' }, level: { fr: 'Natif', en: 'Native' } },
-        { name: { fr: 'Anglais', en: 'English' }, level: { fr: 'Bilingue', en: 'Bilingual' } },
+        { name: { fr: 'Anglais', en: 'English' }, level: { fr: 'Bilingue', en: 'Fluent' } },
         { name: { fr: 'Espagnol', en: 'Spanish' }, level: { fr: 'Professionnel', en: 'Professional' } },
       ],
     },
@@ -95,7 +95,7 @@ export const resumeConfig: ResumeConfig = {
       id: 'lacroix',
       company: { fr: 'Lacroix Sofrel', en: 'Lacroix Sofrel' },
       role: { fr: 'Audit de maturité produit', en: 'Product Maturity Audit' },
-      type: { fr: 'Mission de conseil', en: 'Consulting' },
+      type: { fr: 'Audit', en: 'Auditing' },
       period: { fr: 'Jan 2026', en: 'Jan 2026' },
       description: {
         fr: 'Audit de maturité produit et recommandations stratégiques.',
@@ -119,7 +119,7 @@ export const resumeConfig: ResumeConfig = {
       id: 'sinari',
       company: { fr: 'Groupe Sinari', en: 'Sinari Group' },
       role: { fr: 'Product Manager & Product Designer', en: 'Product Manager & Product Designer' },
-      type: { fr: 'CDI', en: 'Permanent' },
+      type: { fr: 'Conseil', en: 'Consulting' },
       period: { fr: '2023 - 2025', en: '2023 - 2025' },
       description: {
         fr: 'Modernisation UX et création d\'une gouvernance produit et design system.',
@@ -132,7 +132,7 @@ export const resumeConfig: ResumeConfig = {
       id: 'treckea',
       company: { fr: 'Treckea (Arkéa)', en: 'Treckea (Arkéa)' },
       role: { fr: 'Product Manager & Product Designer', en: 'Product Manager & Product Designer' },
-      type: { fr: 'Mission', en: 'Consulting' },
+      type: { fr: 'Mission', en: 'Mission' },
       period: { fr: '2019 - 2023', en: '2019 - 2023' },
       description: {
         fr: 'Pilotage stratégie produit, vision et user research.',
@@ -144,7 +144,7 @@ export const resumeConfig: ResumeConfig = {
       id: 'cantine',
       company: { fr: 'Cantine Numérique Rennaise', en: 'Rennes Digital Hub' },
       role: { fr: 'Directrice', en: 'Director' },
-      type: { fr: 'Direction', en: 'Leadership' },
+      type: { fr: 'Direction', en: 'Director' },
       period: { fr: '2009 - 2015', en: '2009 - 2015' },
       description: {
         fr: 'Création du premier espace de coworking et accélérateur startup régional.',
@@ -155,7 +155,7 @@ export const resumeConfig: ResumeConfig = {
     {
       id: 'eyeka',
       company: { fr: 'Eyeka', en: 'Eyeka' },
-      role: { fr: 'Product Owner', en: 'Product Owner' },
+      role: { fr: 'Product Manager', en: 'Product Manager' },
       type: { fr: 'CDI', en: 'Permanent' },
       period: { fr: '2006 - 2008', en: '2006 - 2008' },
       description: {
