@@ -127,7 +127,7 @@ export const resumeConfig: ResumeConfig = {
         tasks: {
           en: [
             'Refonte UX : modernisation UX des produits et gestion du legacy',
-            'Création d\’une équipe UX et le repositionnement du rôle de l’UX au sein du groupe',
+            'Création d\’une équipe UX et le repositionnement du rôle de l\’UX au sein du groupe',
             'Création d\’une architecture UX qui supporte le multi-équipe, multi-technologie, multi-plateforme',
             'Création d\’un Design System et des protocoles de recherche utilisateur',
             'Production de prototypes interactifs en design-to-specs',
@@ -139,7 +139,7 @@ export const resumeConfig: ResumeConfig = {
           ],
           fr: [
             'Refonte UX : modernisation UX des produits et gestion du legacy',
-            'Création d\’une équipe UX et le repositionnement du rôle de l’UX au sein du groupe',
+            'Création d\’une équipe UX et le repositionnement du rôle de l\’UX au sein du groupe',
             'Création d\’une architecture UX qui supporte le multi-équipe, multi-technologie, multi-plateforme',
             'Création d\’un Design System et des protocoles de recherche utilisateur',
             'Production de prototypes interactifs en design-to-specs',
