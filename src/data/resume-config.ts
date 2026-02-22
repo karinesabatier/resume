@@ -209,7 +209,7 @@ export const resumeConfig: ResumeConfig = {
     { title: { fr: 'Speaker Agile & Innovation', en: 'Agile & Innovation Speaker' } },
   ],
 
-  theme: { preset: 'forest' },
+  theme: { preset: 'slate' },
 
   labels: {
     sections: {
