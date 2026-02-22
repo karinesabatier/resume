@@ -1,738 +1,243 @@
 import type { ResumeConfig } from './types'
 
-/**
- * All text fields that support multiple languages use the `LocalizedString` format:
- * { en: "English text", fr: "Texte français" }
- *
- * Add as many languages as you need — just make sure to list them in `languages.available`.
- */
 export const resumeConfig: ResumeConfig = {
-  // ===== PERSONAL INFO =====
   personal: {
     name: 'Karine Sabatier',
-    // Auto-detected: just drop your photo or profile image in public/images/ (any .jpg, .png, .webp)
-    // You can also set a specific path here to override auto-detection:
-    photo: '/images/photo.jpg',
-    photoBackEmoji: '👩‍💻', // Shown when clicking the photo (3D flip)
+    photoBackEmoji: '👩‍💼',
     title: {
-      en: 'Product Management & Product Design',
-      fr: 'Product Management & Product Design',
+      fr: 'Product Transformation Strategist & Executive Advisor',
+      en: 'Product Transformation Strategist & Executive Advisor',
     },
     subtitle: {
-      en: '30 years of experience',
-      fr: '30 ans d\'expérience',
+      fr: 'Je transforme la stratégie produit en décisions concrètes et actionnables.',
+      en: 'I turn product strategy into actionable decisions.',
     },
-    location: 'Rennes, France',
+    location: 'Bretagne, France',
   },
 
-  // ===== SEO (used in <head> meta tags) =====
   seo: {
-    title: 'Karine Sabatier — Product Management & Product Design',
-    description: 'CV interactif de Karine Sabatier, Product Management + Product Design.',
+    title: 'Karine Sabatier — Product Transformation Strategist & Executive Advisor',
+    description: 'J\'accompagne dirigeants et organisations dans leurs transformations produit pour aligner stratégie, design et delivery.',
   },
 
-  // ===== LANGUAGES =====
   languages: {
-    default: 'en',
-    available: ['en', 'fr'],
-    labels: {
-      en: 'EN',
-      fr: 'FR',
-    },
+    default: 'fr',
+    available: ['fr', 'en'],
+    labels: { fr: 'FR', en: 'EN' },
   },
 
-  // ===== CONTACT =====
   contact: [
-    { type: 'linkedin', label: 'Jane Doe', href: 'https://linkedin.com/in/karinesabatier' },
+    { type: 'linkedin', label: 'Karine Sabatier', href: 'https://www.linkedin.com/in/karinesabatier/' },
     { type: 'email', label: 'karine.sabatier@zenika.com' },
-    { type: 'location', label: 'Rennes, France' },
+    { type: 'link', label: 'Certification Google UX Design', href: 'https://www.coursera.org/account/accomplishments/specialization/certificate/3C6TLEMPW3BN' },
+    { type: 'link', label: 'Credly Badge', href: 'https://www.credly.com/badges/5322a293-82d3-4742-bd00-480795f9ab98?source=linked_in_profile' },
+    { type: 'link', label: 'Talk Agile Tour', href: 'https://www.youtube.com/watch?v=z_Pvp5mjEx0&t=72s' },
+    { type: 'link', label: 'Explore', href: 'https://explore.le-shift.co' },
+    { type: 'link', label: 'LesImpatientes', href: 'https://lesimpatientes.com' },
+    { type: 'link', label: 'Backlight Magazine', href: 'http://blog.backlightmag.com' },
+    { type: 'link', label: 'Product Managers de l\'Ouest', href: 'https://product-mngt.slack.com' },
+    { type: 'location', label: 'Bretagne, France' },
   ],
 
-  // ===== SKILLS =====
   skills: [
     {
-      title: { en: 'Languages', fr: 'Langues' },
+      title: { fr: 'Langues', en: 'Languages' },
       type: 'languages',
       items: [
-        { name: { en: 'French', fr: 'Français' }, level: { en: 'Native', fr: 'Natif' } },
-        { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Fluent', fr: 'Bilingue' }, details: 'TOEIC C1' },
+        { name: { fr: 'Français', en: 'French' }, level: { fr: 'Natif', en: 'Native' } },
+        { name: { fr: 'Anglais', en: 'English' }, level: { fr: 'Bilingue', en: 'Bilingual' } },
+        { name: { fr: 'Espagnol', en: 'Spanish' }, level: { fr: 'Professionnel', en: 'Professional' } },
       ],
     },
     {
-      title: { en: 'Product Management', fr: 'Product Management' },
-      type: 'badges',
+      title: { fr: 'Product Strategy', en: 'Product Strategy' },
+      type: 'text',
       items: [
-        { name: 'Vision' },
-        { name: 'Stratégie, positionnement' },
-        { name: 'Gouvernance Produit' },
-        { name: 'Organisation Produit' },
-        { name: 'Business Modelling' },
-        { name: 'Roadmap' },
+        { name: { fr: 'Vision Produit, Gouvernance Produit, Discovery, Roadmap, MVP, Stratégie produit', en: 'Product Vision, Product Governance, Discovery, Roadmap, MVP, Product Strategy' } },
       ],
     },
     {
-      title: { en: 'UX & Product Design', fr: 'UX & Product Design' },
+      title: { fr: 'UX & Product Design', en: 'UX & Product Design' },
       type: 'badges',
       items: [
-        { name: 'Product Shaping' },
+        { name: 'UX Design' },
         { name: 'User Research' },
-        { name: 'User eXperience' },
-        { name: 'Userflows' },
         { name: 'Service Design' },
+        { name: 'Design System' },
+        { name: 'Figma' },
+        { name: 'Adobe Suite' },
       ],
     },
     {
-      title: { en: 'Database', fr: 'Base de données' },
-      type: 'badges',
-      items: [
-        { name: 'PostgreSQL' },
-        { name: 'MongoDB' },
-      ],
-    },
-    {
-      title: { en: 'DevOps', fr: 'DevOps' },
-      type: 'badges',
-      items: [
-        { name: 'Docker' },
-        { name: 'Kubernetes' },
-        { name: 'AWS' },
-        { name: 'GitHub Actions' },
-      ],
-    },
-    {
-      title: { en: 'Methodologies', fr: 'Méthodologies' },
+      title: { fr: 'Méthodologies', en: 'Methodologies' },
       type: 'text',
       items: [
-        { name: { en: 'Agile/Scrum, TDD, Code Review, CI/CD', fr: 'Agile/Scrum, TDD, Code Review, CI/CD' } },
-      ],
-    },
-  ],
-
-  // ===== PROFESSIONAL EXPERIENCES =====
-  experiences: [
-    {
-      id: 'company-a',
-      company: { en: 'TechCorp', fr: 'TechCorp' },
-      role: { en: 'Senior Fullstack Developer', fr: 'Développeuse Fullstack Senior' },
-      type: { en: 'Permanent', fr: 'CDI' },
-      period: { en: '2022 - Present', fr: '2022 - Présent' },
-      description: {
-        en: 'Led the development of a SaaS platform used by 10k+ users. Built microservices architecture and modern React frontend.',
-        fr: 'Direction du développement d\'une plateforme SaaS utilisée par 10k+ utilisateurs. Architecture microservices et frontend React moderne.',
-      },
-      techs: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Docker', 'AWS'],
-      isHighlighted: true,
-      details: {
-        context: {
-          en: 'Team of 8 developers within a 50-person product company. Agile/Scrum methodology with 2-week sprints, CI/CD pipeline with GitHub Actions, code reviews on every PR.',
-          fr: 'Équipe de 8 développeurs au sein d\'une société produit de 50 personnes. Méthodologie Agile/Scrum avec sprints de 2 semaines, pipeline CI/CD avec GitHub Actions, code review sur chaque PR.',
-        },
-        tasks: {
-          en: [
-            'Designed and implemented the frontend architecture (monorepo, shared component library)',
-            'Built a real-time notification system using WebSockets and Redis pub/sub',
-            'Migrated legacy codebase from JavaScript to TypeScript (200+ files)',
-            'Implemented role-based access control (RBAC) across the entire platform',
-            'Set up automated testing with 85% code coverage (unit, integration, E2E)',
-            'Led the migration from REST to GraphQL for the main API',
-            'Built a dashboard analytics module with interactive charts and export features',
-            'Mentored 3 junior developers through pair programming and weekly 1-on-1s',
-          ],
-          fr: [
-            'Conception et implémentation de l\'architecture frontend (monorepo, bibliothèque de composants partagés)',
-            'Création d\'un système de notifications temps réel via WebSockets et Redis pub/sub',
-            'Migration du code legacy de JavaScript vers TypeScript (200+ fichiers)',
-            'Implémentation d\'un contrôle d\'accès basé sur les rôles (RBAC) sur toute la plateforme',
-            'Mise en place de tests automatisés avec 85% de couverture (unitaires, intégration, E2E)',
-            'Pilotage de la migration de REST vers GraphQL pour l\'API principale',
-            'Développement d\'un module de tableau de bord analytique avec graphiques interactifs et export',
-            'Mentorat de 3 développeurs juniors via pair programming et 1-on-1 hebdomadaires',
-          ],
-        },
-        training: {
-          en: [
-            'AWS Solutions Architect certification',
-            'Internal training on Kubernetes orchestration',
-          ],
-          fr: [
-            'Certification AWS Solutions Architect',
-            'Formation interne sur l\'orchestration Kubernetes',
-          ],
-        },
-        env: {
-          en: 'React / TypeScript / Node.js / PostgreSQL / GraphQL / Redis / Docker / AWS / GitHub Actions / Datadog',
-          fr: 'React / TypeScript / Node.js / PostgreSQL / GraphQL / Redis / Docker / AWS / GitHub Actions / Datadog',
-        },
-      },
-    },
-    {
-      id: 'company-b',
-      company: { en: 'WebAgency', fr: 'WebAgency' },
-      role: { en: 'Frontend Developer', fr: 'Développeuse Frontend' },
-      type: { en: 'Permanent', fr: 'CDI' },
-      period: { en: '2019 - 2022', fr: '2019 - 2022' },
-      description: {
-        en: 'Developed responsive web applications for various clients. Specialized in React and Angular projects.',
-        fr: 'Développement d\'applications web responsives pour divers clients. Spécialisée en projets React et Angular.',
-      },
-      techs: ['React', 'Angular', 'TypeScript', 'SCSS'],
-      details: {
-        context: {
-          en: 'Digital agency with 20+ clients across various industries (retail, finance, healthcare). Team of 12 developers, working on 3-4 projects simultaneously.',
-          fr: 'Agence digitale avec 20+ clients dans différents secteurs (retail, finance, santé). Équipe de 12 développeurs, travaillant sur 3-4 projets simultanément.',
-        },
-        tasks: {
-          en: [
-            'Built 15+ client-facing web applications from scratch',
-            'Created and maintained a shared design system used across all agency projects',
-            'Implemented complex form workflows with multi-step validation',
-            'Optimized web performance achieving 90+ scores on Core Web Vitals',
-            'Integrated third-party APIs (payment, CRM, analytics)',
-            'Set up Storybook documentation for reusable components',
-            'Collaborated closely with UX designers to translate Figma mockups into pixel-perfect UIs',
-          ],
-          fr: [
-            'Développement de 15+ applications web clients from scratch',
-            'Création et maintenance d\'un design system partagé utilisé sur tous les projets de l\'agence',
-            'Implémentation de workflows de formulaires complexes avec validation multi-étapes',
-            'Optimisation des performances web avec scores 90+ sur les Core Web Vitals',
-            'Intégration d\'APIs tierces (paiement, CRM, analytics)',
-            'Mise en place de la documentation Storybook pour les composants réutilisables',
-            'Collaboration étroite avec les designers UX pour traduire les maquettes Figma en interfaces pixel-perfect',
-          ],
-        },
-        training: {
-          en: [
-            'Angular Advanced workshop (2 days)',
-            'Accessibility (WCAG 2.1) certification',
-          ],
-          fr: [
-            'Workshop Angular Avancé (2 jours)',
-            'Certification Accessibilité (WCAG 2.1)',
-          ],
-        },
-        env: {
-          en: 'React / Angular / TypeScript / SCSS / Tailwind CSS / Storybook / Figma / GitLab CI',
-          fr: 'React / Angular / TypeScript / SCSS / Tailwind CSS / Storybook / Figma / GitLab CI',
-        },
-      },
-    },
-    {
-      id: 'internship',
-      company: { en: 'StartupXYZ', fr: 'StartupXYZ' },
-      role: { en: 'Fullstack Developer Intern', fr: 'Stagiaire Développeuse Fullstack' },
-      type: { en: 'Internship', fr: 'Stage' },
-      period: { en: '2018 - 2019', fr: '2018 - 2019' },
-      description: {
-        en: 'Contributed to the development of an e-commerce platform. Gained experience in fullstack development.',
-        fr: 'Contribution au développement d\'une plateforme e-commerce. Acquisition d\'expérience en développement fullstack.',
-      },
-      techs: ['React', 'Node.js', 'MongoDB', 'Machine Learning'],
-      details: {
-        context: {
-          en: 'Early-stage startup (seed round), small team of 5 developers building an e-commerce platform from the ground up. Fast-paced environment with weekly releases.',
-          fr: 'Startup en phase de démarrage (seed round), petite équipe de 5 développeurs construisant une plateforme e-commerce from scratch. Environnement rapide avec des releases hebdomadaires.',
-        },
-        tasks: {
-          en: [
-            'Developed the product catalog with advanced filtering and search',
-            'Built the shopping cart with real-time inventory checking',
-            'Integrated Stripe payment gateway with 3D Secure support',
-            'Implemented user authentication with JWT and OAuth (Google, Facebook)',
-            'Created an admin dashboard for order management and analytics',
-            'Wrote API documentation with Swagger/OpenAPI',
-          ],
-          fr: [
-            'Développement du catalogue produits avec filtrage avancé et recherche',
-            'Création du panier d\'achat avec vérification de stock en temps réel',
-            'Intégration de la passerelle de paiement Stripe avec support 3D Secure',
-            'Implémentation de l\'authentification utilisateur avec JWT et OAuth (Google, Facebook)',
-            'Création d\'un tableau de bord admin pour la gestion des commandes et les analytics',
-            'Rédaction de la documentation API avec Swagger/OpenAPI',
-          ],
-        },
-        env: {
-          en: 'React / Node.js / Express / MongoDB / Stripe / JWT / Docker / Heroku',
-          fr: 'React / Node.js / Express / MongoDB / Stripe / JWT / Docker / Heroku',
-        },
-      },
-    },
-  ],
-
-  // ===== PROJECTS (optional) =====
-  projects: [
-    {
-      id: 'project-a',
-      title: { en: 'WeatherApp', fr: 'WeatherApp' },
-      description: {
-        en: 'A real-time weather dashboard built with React and OpenWeather API.',
-        fr: 'Un tableau de bord météo en temps réel construit avec React et l\'API OpenWeather.',
-      },
-      techs: ['React', 'TypeScript'],
-      url: 'https://weather-app.example.com',
-      github: 'https://github.com/janedoe/weather-app',
-    },
-    {
-      id: 'project-b',
-      title: { en: 'TaskManager', fr: 'TaskManager' },
-      description: {
-        en: 'A Kanban-style task management tool with drag-and-drop.',
-        fr: 'Un outil de gestion de tâches style Kanban avec glisser-déposer.',
-      },
-      techs: ['React', 'Node.js', 'PostgreSQL'],
-      github: 'https://github.com/janedoe/task-manager',
-    },
-  ],
-
-  // ===== EDUCATION =====
-  education: [
-    {
-      school: { en: 'University of Paris', fr: 'Université de Paris' },
-      degree: { en: 'Master in Computer Science', fr: 'Master Informatique' },
-      specialty: { en: 'Web & Mobile Development', fr: 'Développement Web & Mobile' },
-      period: '2017 - 2019',
-    },
-    {
-      school: { en: 'University of Paris', fr: 'Université de Paris' },
-      degree: { en: 'Bachelor in Computer Science', fr: 'Licence Informatique' },
-      period: '2014 - 2017',
-    },
-  ],
-
-  // ===== HOBBIES (optional) =====
-  hobbies: [
-    {
-      title: { en: 'Photography', fr: 'Photographie' },
-      details: [
-        { en: 'Street photography', fr: 'Photo de rue' },
-        { en: '5 years', fr: '5 ans' },
+        { name: { fr: 'Agile, XP, Kanban, Lean Startup, Lean UX, Design Thinking', en: 'Agile, XP, Kanban, Lean Startup, Lean UX, Design Thinking' } },
       ],
     },
     {
-      title: { en: 'Hiking', fr: 'Randonnée' },
-      details: [
-        { en: 'Mountain trails', fr: 'Sentiers de montagne' },
-      ],
-    },
-    {
-      title: { en: 'Open Source', fr: 'Open Source' },
-    },
-    {
-      title: { en: 'Guitar', fr: 'Guitare' },
-      details: [
-        { en: '3 years', fr: '3 ans' },
-      ],
-    },
-  ],
-
-  // ===== PDF (optional) =====
-  // Auto-detected: just drop your PDF files in public/cv/fr/ and public/cv/en/
-  // The download button will appear automatically — no config needed!
-  // Uncomment below only if you need to override the auto-detection:
-  // pdf: {
-  //   label: { en: 'Download PDF', fr: 'Télécharger le PDF' },
-  //   path: { en: '/cv/en/resume-en.pdf', fr: '/cv/fr/resume-fr.pdf' },
-  // },
-
-  // ===== THEME =====
-  theme: {
-    preset: 'warm', // 'minimal' | 'warm' | 'ocean' | 'forest' | 'slate' | 'lilac'
-    // You can override individual colors:
-    // colors: {
-    //   primary: '#8B5A2B',
-    //   primaryLight: '#D4A574',
-    // },
-  },
-
-  // ===== UI LABELS =====
-  labels: {
-    sections: {
-      contact: { en: 'CONTACT', fr: 'CONTACT' },
-      skills: { en: 'SKILLS', fr: 'COMPÉTENCES' },
-      experience: { en: 'PROFESSIONAL EXPERIENCE', fr: 'EXPÉRIENCES PROFESSIONNELLES' },
-      education: { en: 'EDUCATION', fr: 'FORMATION' },
-      projects: { en: 'PROJECTS', fr: 'PROJETS' },
-      hobbies: { en: 'HOBBIES', fr: 'LOISIRS' },
-    },
-    experience: {
-      mainTasks: { en: 'Main tasks:', fr: 'Tâches principales :' },
-      moreTasks: { en: 'more tasks...', fr: 'autres tâches...' },
-      training: { en: 'Training:', fr: 'Formations :' },
-      techEnv: { en: 'Tech environment:', fr: 'Env. technique :' },
-      technologies: { en: 'Technologies', fr: 'Technologies' },
-    },
-    actions: {
-      clickHint: { en: 'Click on experiences to see more details', fr: 'Cliquez sur les expériences pour voir plus de détails' },
-      switchTheme: { en: 'Toggle dark mode', fr: 'Changer le thème' },
-      downloadPdf: { en: 'Download PDF', fr: 'Télécharger le PDF' },
-    },
-  },
-}import type { ResumeConfig } from './types'
-
-/**
- * This is an example configuration file.
- * Copy this file to `resume-config.ts` and fill in your own information.
- *
- * All text fields that support multiple languages use the `LocalizedString` format:
- * { en: "English text", fr: "Texte français" }
- *
- * Add as many languages as you need — just make sure to list them in `languages.available`.
- */
-export const resumeConfig: ResumeConfig = {
-  // ===== PERSONAL INFO =====
-  personal: {
-    name: 'Jane Doe',
-    // Auto-detected: just drop your photo or profile image in public/images/ (any .jpg, .png, .webp)
-    // You can also set a specific path here to override auto-detection:
-    photo: '/images/photo.jpg',
-    photoBackEmoji: '👩‍💻', // Shown when clicking the photo (3D flip)
-    title: {
-      en: 'Fullstack Developer',
-      fr: 'Développeuse Fullstack',
-    },
-    subtitle: {
-      en: '6 years of experience',
-      fr: '6 ans d\'expérience',
-    },
-    location: 'Paris, France',
-  },
-
-  // ===== SEO (used in <head> meta tags) =====
-  seo: {
-    title: 'Jane Doe — Fullstack Developer',
-    description: 'Interactive resume of Jane Doe, Fullstack Developer specializing in React and TypeScript.',
-  },
-
-  // ===== LANGUAGES =====
-  languages: {
-    default: 'en',
-    available: ['en', 'fr'],
-    labels: {
-      en: 'EN',
-      fr: 'FR',
-    },
-  },
-
-  // ===== CONTACT =====
-  contact: [
-    { type: 'github', label: 'janedoe', href: 'https://github.com/janedoe' },
-    { type: 'linkedin', label: 'Jane Doe', href: 'https://linkedin.com/in/janedoe' },
-    { type: 'email', label: 'jane@example.com' },
-    { type: 'phone', label: '+33 6 12 34 56 78' },
-    { type: 'location', label: 'Paris, France' },
-  ],
-
-  // ===== SKILLS =====
-  skills: [
-    {
-      title: { en: 'Languages', fr: 'Langues' },
-      type: 'languages',
-      items: [
-        { name: { en: 'French', fr: 'Français' }, level: { en: 'Native', fr: 'Natif' } },
-        { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Professional', fr: 'Professionnel' }, details: 'TOEIC 910' },
-        { name: { en: 'Spanish', fr: 'Espagnol' }, level: { en: 'Casual', fr: 'Informel' } },
-      ],
-    },
-    {
-      title: { en: 'Frontend', fr: 'Frontend' },
-      type: 'badges',
-      items: [
-        { name: 'React' },
-        { name: 'TypeScript' },
-        { name: 'Angular' },
-      ],
-    },
-    {
-      title: { en: 'Backend', fr: 'Backend' },
-      type: 'badges',
-      items: [
-        { name: 'Node.js' },
-        { name: 'Python' },
-      ],
-    },
-    {
-      title: { en: 'Database', fr: 'Base de données' },
-      type: 'badges',
-      items: [
-        { name: 'PostgreSQL' },
-        { name: 'MongoDB' },
-      ],
-    },
-    {
-      title: { en: 'DevOps', fr: 'DevOps' },
-      type: 'badges',
-      items: [
-        { name: 'Docker' },
-        { name: 'Kubernetes' },
-        { name: 'AWS' },
-        { name: 'GitHub Actions' },
-      ],
-    },
-    {
-      title: { en: 'Methodologies', fr: 'Méthodologies' },
+      title: { fr: 'Leadership & Transformation', en: 'Leadership & Transformation' },
       type: 'text',
       items: [
-        { name: { en: 'Agile/Scrum, TDD, Code Review, CI/CD', fr: 'Agile/Scrum, TDD, Code Review, CI/CD' } },
+        { name: { fr: 'Transformation organisationnelle, Conduite du changement, Facilitation stratégique, Coaching dirigeants', en: 'Organizational transformation, Change management, Strategic facilitation, Executive coaching' } },
       ],
     },
   ],
 
-  // ===== PROFESSIONAL EXPERIENCES =====
   experiences: [
     {
-      id: 'company-a',
-      company: { en: 'TechCorp', fr: 'TechCorp' },
-      role: { en: 'Senior Fullstack Developer', fr: 'Développeuse Fullstack Senior' },
-      type: { en: 'Permanent', fr: 'CDI' },
-      period: { en: '2022 - Present', fr: '2022 - Présent' },
+      id: 'executive-advisory',
+      company: { fr: 'Executive Product Transformation & Advisory', en: 'Executive Product Transformation & Advisory' },
+      role: { fr: 'Product Transformation Strategist', en: 'Product Transformation Strategist' },
+      type: { fr: 'Conseil & Advisory', en: 'Advisory & Consulting' },
+      period: { fr: '2015 - Présent', en: '2015 - Present' },
       description: {
-        en: 'Led the development of a SaaS platform used by 10k+ users. Built microservices architecture and modern React frontend.',
-        fr: 'Direction du développement d\'une plateforme SaaS utilisée par 10k+ utilisateurs. Architecture microservices et frontend React moderne.',
+        fr: 'Accompagnement de dirigeants et organisations pour devenir réellement product-driven et transformer la stratégie en décisions actionnables.',
+        en: 'Advising leaders and organizations to become truly product-driven and turn strategy into actionable decisions.',
       },
-      techs: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Docker', 'AWS'],
+      techs: ['Product Strategy', 'Transformation', 'Leadership'],
       isHighlighted: true,
-      details: {
-        context: {
-          en: 'Team of 8 developers within a 50-person product company. Agile/Scrum methodology with 2-week sprints, CI/CD pipeline with GitHub Actions, code reviews on every PR.',
-          fr: 'Équipe de 8 développeurs au sein d\'une société produit de 50 personnes. Méthodologie Agile/Scrum avec sprints de 2 semaines, pipeline CI/CD avec GitHub Actions, code review sur chaque PR.',
-        },
-        tasks: {
-          en: [
-            'Designed and implemented the frontend architecture (monorepo, shared component library)',
-            'Built a real-time notification system using WebSockets and Redis pub/sub',
-            'Migrated legacy codebase from JavaScript to TypeScript (200+ files)',
-            'Implemented role-based access control (RBAC) across the entire platform',
-            'Set up automated testing with 85% code coverage (unit, integration, E2E)',
-            'Led the migration from REST to GraphQL for the main API',
-            'Built a dashboard analytics module with interactive charts and export features',
-            'Mentored 3 junior developers through pair programming and weekly 1-on-1s',
-          ],
-          fr: [
-            'Conception et implémentation de l\'architecture frontend (monorepo, bibliothèque de composants partagés)',
-            'Création d\'un système de notifications temps réel via WebSockets et Redis pub/sub',
-            'Migration du code legacy de JavaScript vers TypeScript (200+ fichiers)',
-            'Implémentation d\'un contrôle d\'accès basé sur les rôles (RBAC) sur toute la plateforme',
-            'Mise en place de tests automatisés avec 85% de couverture (unitaires, intégration, E2E)',
-            'Pilotage de la migration de REST vers GraphQL pour l\'API principale',
-            'Développement d\'un module de tableau de bord analytique avec graphiques interactifs et export',
-            'Mentorat de 3 développeurs juniors via pair programming et 1-on-1 hebdomadaires',
-          ],
-        },
-        training: {
-          en: [
-            'AWS Solutions Architect certification',
-            'Internal training on Kubernetes orchestration',
-          ],
-          fr: [
-            'Certification AWS Solutions Architect',
-            'Formation interne sur l\'orchestration Kubernetes',
-          ],
-        },
-        env: {
-          en: 'React / TypeScript / Node.js / PostgreSQL / GraphQL / Redis / Docker / AWS / GitHub Actions / Datadog',
-          fr: 'React / TypeScript / Node.js / PostgreSQL / GraphQL / Redis / Docker / AWS / GitHub Actions / Datadog',
-        },
-      },
     },
     {
-      id: 'company-b',
-      company: { en: 'WebAgency', fr: 'WebAgency' },
-      role: { en: 'Frontend Developer', fr: 'Développeuse Frontend' },
-      type: { en: 'Permanent', fr: 'CDI' },
-      period: { en: '2019 - 2022', fr: '2019 - 2022' },
+      id: 'lacroix',
+      company: { fr: 'Lacroix Sofrel', en: 'Lacroix Sofrel' },
+      role: { fr: 'Audit de maturité produit', en: 'Product Maturity Audit' },
+      type: { fr: 'Mission de conseil', en: 'Consulting' },
+      period: { fr: 'Jan 2026', en: 'Jan 2026' },
       description: {
-        en: 'Developed responsive web applications for various clients. Specialized in React and Angular projects.',
-        fr: 'Développement d\'applications web responsives pour divers clients. Spécialisée en projets React et Angular.',
+        fr: 'Audit de maturité produit et recommandations stratégiques.',
+        en: 'Product maturity audit and strategic recommendations.',
       },
-      techs: ['React', 'Angular', 'TypeScript', 'SCSS'],
-      details: {
-        context: {
-          en: 'Digital agency with 20+ clients across various industries (retail, finance, healthcare). Team of 12 developers, working on 3-4 projects simultaneously.',
-          fr: 'Agence digitale avec 20+ clients dans différents secteurs (retail, finance, santé). Équipe de 12 développeurs, travaillant sur 3-4 projets simultanément.',
-        },
-        tasks: {
-          en: [
-            'Built 15+ client-facing web applications from scratch',
-            'Created and maintained a shared design system used across all agency projects',
-            'Implemented complex form workflows with multi-step validation',
-            'Optimized web performance achieving 90+ scores on Core Web Vitals',
-            'Integrated third-party APIs (payment, CRM, analytics)',
-            'Set up Storybook documentation for reusable components',
-            'Collaborated closely with UX designers to translate Figma mockups into pixel-perfect UIs',
-          ],
-          fr: [
-            'Développement de 15+ applications web clients from scratch',
-            'Création et maintenance d\'un design system partagé utilisé sur tous les projets de l\'agence',
-            'Implémentation de workflows de formulaires complexes avec validation multi-étapes',
-            'Optimisation des performances web avec scores 90+ sur les Core Web Vitals',
-            'Intégration d\'APIs tierces (paiement, CRM, analytics)',
-            'Mise en place de la documentation Storybook pour les composants réutilisables',
-            'Collaboration étroite avec les designers UX pour traduire les maquettes Figma en interfaces pixel-perfect',
-          ],
-        },
-        training: {
-          en: [
-            'Angular Advanced workshop (2 days)',
-            'Accessibility (WCAG 2.1) certification',
-          ],
-          fr: [
-            'Workshop Angular Avancé (2 jours)',
-            'Certification Accessibilité (WCAG 2.1)',
-          ],
-        },
-        env: {
-          en: 'React / Angular / TypeScript / SCSS / Tailwind CSS / Storybook / Figma / GitLab CI',
-          fr: 'React / Angular / TypeScript / SCSS / Tailwind CSS / Storybook / Figma / GitLab CI',
-        },
-      },
+      techs: ['Product Management'],
     },
     {
-      id: 'internship',
-      company: { en: 'StartupXYZ', fr: 'StartupXYZ' },
-      role: { en: 'Fullstack Developer Intern', fr: 'Stagiaire Développeuse Fullstack' },
-      type: { en: 'Internship', fr: 'Stage' },
-      period: { en: '2018 - 2019', fr: '2018 - 2019' },
+      id: 'gmv',
+      company: { fr: 'GMV (Centravet)', en: 'GMV (Centravet)' },
+      role: { fr: 'Conseil stratégie produit', en: 'Product Strategy Consultant' },
+      type: { fr: 'Conseil', en: 'Consulting' },
+      period: { fr: '2025 - Présent', en: '2025 - Present' },
       description: {
-        en: 'Contributed to the development of an e-commerce platform. Gained experience in fullstack development.',
-        fr: 'Contribution au développement d\'une plateforme e-commerce. Acquisition d\'expérience en développement fullstack.',
+        fr: 'Refonte d\'applicatifs à destination des cliniques vétérinaires.',
+        en: 'Applications redesign for veterinary clinics.',
       },
-      techs: ['React', 'Node.js', 'MongoDB', 'Machine Learning'],
-      details: {
-        context: {
-          en: 'Early-stage startup (seed round), small team of 5 developers building an e-commerce platform from the ground up. Fast-paced environment with weekly releases.',
-          fr: 'Startup en phase de démarrage (seed round), petite équipe de 5 développeurs construisant une plateforme e-commerce from scratch. Environnement rapide avec des releases hebdomadaires.',
-        },
-        tasks: {
-          en: [
-            'Developed the product catalog with advanced filtering and search',
-            'Built the shopping cart with real-time inventory checking',
-            'Integrated Stripe payment gateway with 3D Secure support',
-            'Implemented user authentication with JWT and OAuth (Google, Facebook)',
-            'Created an admin dashboard for order management and analytics',
-            'Wrote API documentation with Swagger/OpenAPI',
-          ],
-          fr: [
-            'Développement du catalogue produits avec filtrage avancé et recherche',
-            'Création du panier d\'achat avec vérification de stock en temps réel',
-            'Intégration de la passerelle de paiement Stripe avec support 3D Secure',
-            'Implémentation de l\'authentification utilisateur avec JWT et OAuth (Google, Facebook)',
-            'Création d\'un tableau de bord admin pour la gestion des commandes et les analytics',
-            'Rédaction de la documentation API avec Swagger/OpenAPI',
-          ],
-        },
-        env: {
-          en: 'React / Node.js / Express / MongoDB / Stripe / JWT / Docker / Heroku',
-          fr: 'React / Node.js / Express / MongoDB / Stripe / JWT / Docker / Heroku',
-        },
+      techs: ['UX', 'Product Design'],
+    },
+    {
+      id: 'sinari',
+      company: { fr: 'Groupe Sinari', en: 'Sinari Group' },
+      role: { fr: 'Product Manager & Product Designer', en: 'Product Manager & Product Designer' },
+      type: { fr: 'CDI', en: 'Permanent' },
+      period: { fr: '2023 - 2025', en: '2023 - 2025' },
+      description: {
+        fr: 'Modernisation UX et création d\'une gouvernance produit et design system.',
+        en: 'UX modernization and product governance setup.',
       },
+      techs: ['UX', 'Design System'],
+      isHighlighted: true,
+    },
+    {
+      id: 'treckea',
+      company: { fr: 'Treckea (Arkéa)', en: 'Treckea (Arkéa)' },
+      role: { fr: 'Product Manager & Product Designer', en: 'Product Manager & Product Designer' },
+      type: { fr: 'Mission', en: 'Consulting' },
+      period: { fr: '2019 - 2023', en: '2019 - 2023' },
+      description: {
+        fr: 'Pilotage stratégie produit, vision et user research.',
+        en: 'Product strategy leadership and user research.',
+      },
+      techs: ['Product Management', 'Figma'],
+    },
+    {
+      id: 'cantine',
+      company: { fr: 'Cantine Numérique Rennaise', en: 'Rennes Digital Hub' },
+      role: { fr: 'Directrice', en: 'Director' },
+      type: { fr: 'Direction', en: 'Leadership' },
+      period: { fr: '2009 - 2015', en: '2009 - 2015' },
+      description: {
+        fr: 'Création du premier espace de coworking et accélérateur startup régional.',
+        en: 'Creation of the first regional coworking space and startup accelerator.',
+      },
+      techs: ['Innovation', 'Community'],
+    },
+    {
+      id: 'eyeka',
+      company: { fr: 'Eyeka', en: 'Eyeka' },
+      role: { fr: 'Product Owner', en: 'Product Owner' },
+      type: { fr: 'CDI', en: 'Permanent' },
+      period: { fr: '2006 - 2008', en: '2006 - 2008' },
+      description: {
+        fr: 'UX/UI design et déploiement de pratiques agiles.',
+        en: 'UX/UI design and agile practices deployment.',
+      },
+      techs: ['UX', 'Agile'],
+    },
+    {
+      id: 'pixup',
+      company: { fr: 'Pixup', en: 'Pixup' },
+      role: { fr: 'Fondatrice', en: 'Founder' },
+      type: { fr: 'Entrepreneuriat', en: 'Entrepreneurship' },
+      period: { fr: '1997 - 2003', en: '1997 - 2003' },
+      description: {
+        fr: 'Création d\'une agence web et développement de projets digitaux.',
+        en: 'Web agency creation and digital development.',
+      },
+      techs: ['Web', '.NET'],
     },
   ],
 
-  // ===== PROJECTS (optional) =====
-  projects: [
-    {
-      id: 'LesImpatientes.com',
-      title: { en: 'WeatherApp', fr: 'WeatherApp' },
-      description: {
-        en: 'A real-time weather dashboard built with React and OpenWeather API.',
-        fr: 'Un tableau de bord météo en temps réel construit avec React et l\'API OpenWeather.',
-      },
-      techs: ['React', 'TypeScript'],
-      url: 'https://weather-app.example.com',
-      github: 'https://github.com/janedoe/weather-app',
-    },
-    {
-      id: 'Backlight Magazine',
-      title: { en: 'Founder', fr: 'Fondatrice' },
-      description: {
-        en: 'Editrice et rédactrice en chef d\'un magazine consacré à la photo mobile et photo amateur : Backlight Magazine.',
-        fr: 'Editrice et rédactrice en chef d\'un magazine consacré à la photo mobile et photo amateur : Backlight Magazine.',
-      },
-      techs: ['node', 'Node.js', 'PostgreSQL'],
-      github: 'http://blog.backlightmag.com/',
-    },
-  ],
-
-  // ===== EDUCATION =====
   education: [
     {
-      school: { en: 'EFREI', fr: 'EFREI' },
-      degree: { en: 'Master in Computer Science', fr: 'Ingénieure en Informatique' },
-      specialty: { en: 'Web Development', fr: 'Développement Web' },
-      period: '1995',
-    },
-    {
-      school: { en: 'University of Paris', fr: 'Université de Paris' },
-      degree: { en: 'Bachelor in Computer Science', fr: 'Licence Informatique' },
-      period: '2014 - 2017',
+      school: { fr: 'Google', en: 'Google' },
+      degree: { fr: 'Certification Google UX Design', en: 'Google UX Design Certification' },
+      period: '2020',
     },
   ],
 
-  // ===== HOBBIES (optional) =====
+  projects: [
+    {
+      id: 'lesimpatientes',
+      title: { fr: 'LesImpatientes', en: 'LesImpatientes' },
+      description: { fr: 'Communauté de patientes créée en 2002.', en: 'Patient community created in 2002.' },
+      techs: ['Community'],
+      url: 'https://lesimpatientes.com',
+    },
+    {
+      id: 'backlight',
+      title: { fr: 'Backlight Magazine', en: 'Backlight Magazine' },
+      description: { fr: 'Magazine dédié à la photographie mobile.', en: 'Mobile photography magazine.' },
+      techs: ['Photography'],
+      url: 'http://blog.backlightmag.com',
+    },
+  ],
+
   hobbies: [
-    {
-      title: { en: 'Photography', fr: 'Photographie' },
-      details: [
-        { en: 'Street photography', fr: 'Photo de rue' },
-      ],
-    },
-    {
-      title: { en: 'Yoga & meditation', fr: 'Yoga & meditation' },
-      details: [
-        { en: '10 years', fr: '10 ans' },
-      ],
-    },
-    {
-      title: { en: 'Founder', fr: 'Fondatrice' },
-      details: [
-        { en: 'Online Patient Community Founder LesImpatientes.com', fr: 'Communauté de patientes LesImpatientes.com : Fondatrice' },
-      ],
-    },
-    {
-      title: { en: 'Open Source', fr: 'Open Source' },
-    },
+    { title: { fr: 'Photographie', en: 'Photography' } },
+    { title: { fr: 'Mentorat & Communautés Produit', en: 'Mentoring & Product Communities' } },
+    { title: { fr: 'Speaker Agile & Innovation', en: 'Agile & Innovation Speaker' } },
   ],
 
-  // ===== PDF (optional) =====
-  // Auto-detected: just drop your PDF files in public/cv/fr/ and public/cv/en/
-  // The download button will appear automatically — no config needed!
-  // Uncomment below only if you need to override the auto-detection:
-  // pdf: {
-  //   label: { en: 'Download PDF', fr: 'Télécharger le PDF' },
-  //   path: { en: '/cv/en/resume-en.pdf', fr: '/cv/fr/resume-fr.pdf' },
-  // },
+  theme: { preset: 'warm' },
 
-  // ===== THEME =====
-  theme: {
-    preset: 'warm', // 'minimal' | 'warm' | 'ocean' | 'forest' | 'slate' | 'lilac'
-    // You can override individual colors:
-    // colors: {
-    //   primary: '#8B5A2B',
-    //   primaryLight: '#D4A574',
-    // },
-  },
-
-  // ===== UI LABELS =====
   labels: {
     sections: {
-      contact: { en: 'CONTACT', fr: 'CONTACT' },
-      skills: { en: 'SKILLS', fr: 'COMPÉTENCES' },
-      experience: { en: 'PROFESSIONAL EXPERIENCE', fr: 'EXPÉRIENCES PROFESSIONNELLES' },
-      education: { en: 'EDUCATION', fr: 'FORMATION' },
-      projects: { en: 'PROJECTS', fr: 'PROJETS' },
-      hobbies: { en: 'HOBBIES', fr: 'LOISIRS' },
+      contact: { fr: 'CONTACT', en: 'CONTACT' },
+      skills: { fr: 'COMPÉTENCES', en: 'SKILLS' },
+      experience: { fr: 'EXPÉRIENCES', en: 'EXPERIENCE' },
+      education: { fr: 'FORMATION', en: 'EDUCATION' },
+      projects: { fr: 'PROJETS', en: 'PROJECTS' },
+      hobbies: { fr: 'LOISIRS', en: 'HOBBIES' },
     },
     experience: {
-      mainTasks: { en: 'Main tasks:', fr: 'Tâches principales :' },
-      moreTasks: { en: 'more tasks...', fr: 'autres tâches...' },
-      training: { en: 'Training:', fr: 'Formations :' },
-      techEnv: { en: 'Tech environment:', fr: 'Env. technique :' },
-      technologies: { en: 'Technologies', fr: 'Technologies' },
+      mainTasks: { fr: 'Missions principales :', en: 'Main tasks:' },
+      moreTasks: { fr: 'autres missions...', en: 'more tasks...' },
+      training: { fr: 'Formations :', en: 'Training:' },
+      techEnv: { fr: 'Env. technique :', en: 'Tech stack:' },
+      technologies: { fr: 'Technologies', en: 'Technologies' },
     },
     actions: {
-      clickHint: { en: 'Click on experiences to see more details', fr: 'Cliquez sur les expériences pour voir plus de détails' },
-      switchTheme: { en: 'Toggle dark mode', fr: 'Changer le thème' },
-      downloadPdf: { en: 'Download PDF', fr: 'Télécharger le PDF' },
+      clickHint: { fr: 'Cliquez sur les expériences pour voir plus de détails', en: 'Click experiences to see details' },
+      switchTheme: { fr: 'Changer le thème', en: 'Switch theme' },
+      downloadPdf: { fr: 'Télécharger le PDF', en: 'Download PDF' },
     },
   },
 }
