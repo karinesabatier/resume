@@ -162,7 +162,7 @@ export const resumeConfig: ResumeConfig = {
         fr: 'UX/UI design et déploiement de pratiques agiles.',
         en: 'UX/UI design and agile practices deployment.',
       },
-      techs: ['UX', 'Agile'],
+      techs: ['Ruby on Rails', 'Capistrano', 'Kanban'],
     },
     {
       id: 'pixup',
@@ -174,7 +174,7 @@ export const resumeConfig: ResumeConfig = {
         fr: 'Création d\'une agence web et développement de projets digitaux.',
         en: 'Web agency creation and digital development.',
       },
-      techs: ['Web', '.NET'],
+      techs: ['Web design', 'C++'],
     },
   ],
 
