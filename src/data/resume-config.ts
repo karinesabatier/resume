@@ -119,7 +119,7 @@ export const resumeConfig: ResumeConfig = {
       id: 'sinari',
       company: { fr: 'Groupe Sinari', en: 'Sinari Group' },
       role: { fr: 'Product Manager & Product Designer', en: 'Product Manager & Product Designer' },
-      type: { fr: 'Conseil', en: 'Consulting' },
+      type: { fr: 'Mission', en: 'Implementing' },
       period: { fr: '2023 - 2025', en: '2023 - 2025' },
       description: {
         fr: 'Modernisation UX et création d\'une gouvernance produit et design system.',
@@ -132,7 +132,7 @@ export const resumeConfig: ResumeConfig = {
       id: 'treckea',
       company: { fr: 'Treckea (Arkéa)', en: 'Treckea (Arkéa)' },
       role: { fr: 'Product Manager & Product Designer', en: 'Product Manager & Product Designer' },
-      type: { fr: 'Mission', en: 'Mission' },
+      type: { fr: 'Mission', en: 'Implementing' },
       period: { fr: '2019 - 2023', en: '2019 - 2023' },
       description: {
         fr: 'Pilotage stratégie produit, vision et user research.',
