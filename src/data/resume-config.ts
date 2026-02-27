@@ -121,13 +121,14 @@ export const resumeConfig: ResumeConfig = {
       id: 'sinari',
       company: { fr: 'Groupe Sinari', en: 'Sinari Group' },
       role: { fr: 'Product Manager & Product Designer', en: 'Product Manager & Product Designer' },
-      type: { fr: 'Mission', en: 'Implementing' },
+      type: { fr: 'Mission', en: 'Implementing', nobs: 'working around complexity' },
       period: { fr: '2023 - 2025', en: '2023 - 2025' },
       description: {
         fr: 'Modernisation UX et création d\'une gouvernance produit et design system.',
         en: 'UX modernization and product governance setup.',
+        nobs: 'debugging brains (including mine) over very complex matters',
       },
-      techs: ['UX', 'Design System'],
+      techs: ['UX', 'Design System', 'Thinking in systems'],
       isHighlighted: true,
     },
     {
@@ -139,6 +140,7 @@ export const resumeConfig: ResumeConfig = {
       description: {
         fr: 'Pilotage stratégie produit, vision et user research.',
         en: 'Product strategy leadership and user research.',
+        nobs: 'Hey we even lauched a joint venture with our customer',
       },
       techs: ['Product Management', 'Figma'],
     },
