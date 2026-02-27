@@ -142,6 +142,18 @@ export const resumeConfig: ResumeConfig = {
       },
       techs: ['Product Management', 'Figma'],
     },
+        {
+      id: 'leshift',
+      company: { fr: 'Le Shift (CEO)', en: 'Le Shift (CEO)' },
+      role: { fr: 'Fondatrice et CEO', en: 'Founder & CEO', nobs: 'Chief Everything Officer' },
+      type: { fr: 'Mission', en: 'Entrepreneurship' },
+      period: { fr: '2015 - 2019', en: '2015 - 2019' },
+      description: {
+        fr: 'Accompagnement à l\'innovation. Incubation de startups.',
+        en: 'I helped many people and companies create new products',
+      },
+      techs: ['Lean Startup', 'Effectuation'],
+    },
     {
       id: 'cantine',
       company: { fr: 'Cantine Numérique Rennaise', en: 'Rennes Digital Hub' },
@@ -161,8 +173,8 @@ export const resumeConfig: ResumeConfig = {
       type: { fr: 'CDI', en: 'Permanent' },
       period: { fr: '2006 - 2008', en: '2006 - 2008' },
       description: {
-        fr: 'UX/UI design et déploiement de pratiques agiles.',
-        en: 'UX/UI design and agile practices deployment.',
+        fr: 'UX/UI design et déploiement de pratiques produit.',
+        en: 'UX/UI design and product practices deployment.',
       },
       techs: ['Ruby on Rails', 'Capistrano', 'Kanban'],
     },
@@ -217,7 +229,7 @@ export const resumeConfig: ResumeConfig = {
     sections: {
       contact: { fr: 'CONTACT', en: 'CONTACT' },
       skills: { fr: 'COMPÉTENCES', en: 'SKILLS' },
-      experience: { fr: 'EXPÉRIENCES', en: 'EXPERIENCE' },
+      experience: { fr: 'EXPÉRIENCES', en: 'EXPERIENCE', nobs: 'BEEN THERE DONE THAT' },
       education: { fr: 'FORMATION', en: 'EDUCATION' },
       projects: { fr: 'PROJETS', en: 'PROJECTS' },
       hobbies: { fr: 'LOISIRS', en: 'HOBBIES' },
