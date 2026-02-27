@@ -11,6 +11,7 @@ export const resumeConfig: ResumeConfig = {
     subtitle: {
       fr: 'Je transforme la stratégie produit en décisions concrètes et actionnables.',
       en: 'I turn product strategy into actionable decisions.',
+      nobs: 'I ask all the questions about your product that everybody avoid answering.'
     },
     location: 'Bretagne, France',
   },
@@ -22,8 +23,8 @@ export const resumeConfig: ResumeConfig = {
 
   languages: {
     default: 'fr',
-    available: ['fr', 'en'],
-    labels: { fr: 'FR', en: 'EN' },
+    available: ['fr', 'en', 'nobs'],
+    labels: { fr: 'FR', en: 'EN', nobs: 'No Bullshit' },
   },
 
   contact: [
@@ -108,7 +109,7 @@ export const resumeConfig: ResumeConfig = {
       company: { fr: 'GMV (Centravet)', en: 'GMV (Centravet)' },
       role: { fr: 'Conseil stratégie produit', en: 'Product Strategy Consultant' },
       type: { fr: 'Conseil', en: 'Consulting' },
-      period: { fr: '2025 - Présent', en: '2025 - Present' },
+      period: { fr: '2025', en: '2025' },
       description: {
         fr: 'Refonte d\'applicatifs à destination des cliniques vétérinaires.',
         en: 'Applications redesign for veterinary clinics.',
