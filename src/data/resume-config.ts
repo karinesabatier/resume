@@ -103,7 +103,7 @@ export const resumeConfig: ResumeConfig = {
         fr: 'Audit de maturité produit et recommandations stratégiques.',
         en: 'Product maturity audit and strategic recommendations.',
       },
-      techs: ['Product Management'],
+      techs: ['active listening', 'sociology','auditing'],
     },
     {
       id: 'gmv',
@@ -146,7 +146,7 @@ export const resumeConfig: ResumeConfig = {
       id: 'leshift',
       company: { fr: 'Le Shift (CEO)', en: 'Le Shift (CEO)' },
       role: { fr: 'Fondatrice et CEO', en: 'Founder & CEO', nobs: 'Chief Everything Officer' },
-      type: { fr: 'Mission', en: 'Entrepreneurship' },
+      type: { fr: 'Entrepreneuriat', en: 'Entrepreneurship', nobs: 'Entrepreneurship' },
       period: { fr: '2015 - 2019', en: '2015 - 2019' },
       description: {
         fr: 'Accompagnement à l\'innovation. Incubation de startups.',
