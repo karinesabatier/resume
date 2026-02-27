@@ -5,13 +5,14 @@ export const resumeConfig: ResumeConfig = {
     name: 'Karine Sabatier',
     photoBackEmoji: '👩‍💼',
     title: {
-      fr: 'Product Transformation Strategist & Executive Advisor',
-      en: 'Product Transformation Strategist & Executive Advisor',
+      fr: 'Product Transformation Strategist & Executive Advisor, Fractional',
+      en: 'Product Transformation Strategist & Executive Advisor, Fractional',
+      nobs: 'No Bullshit Product Management',
     },
     subtitle: {
       fr: 'Je transforme la stratégie produit en décisions concrètes et actionnables.',
       en: 'I turn product strategy into actionable decisions.',
-      nobs: 'I ask all the questions about your product that everybody avoid answering.'
+      nobs: 'I ask all the tough questions about your product that everyone avoids answering.'
     },
     location: 'Bretagne, France',
   },
